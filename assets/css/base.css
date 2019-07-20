@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+}
+body {
+	color: #DFDFDF;
+	background: #f6f6f6 url('/assets/img/background.jpg') center no-repeat;
+	background-size: 100% auto;
+}
+
+.navbar-inverse {
+	background-color: #000000;
+	/*box-shadow: 0px 7px 20px black;*/
+}
+
+.container {
+	color: black;
+}
+
+.content {
+	min-height: 100%;
+}
+
+.row {
+	background: #DFDFDF;
+	/*box-shadow: 1px 1px 1px 0px rgba(1,1,1,.5);*/
+}
+
+.well {
+	color: #353535;
+}

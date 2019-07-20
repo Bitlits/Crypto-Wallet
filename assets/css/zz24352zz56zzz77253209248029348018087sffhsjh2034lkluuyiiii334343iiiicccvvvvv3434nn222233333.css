@@ -1,0 +1,517 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+  /*  Background Color #343148 */
+.j1-light-grey {
+  background-color: #343148 !important;
+}
+
+#particles-js canvas {
+  /*  position: absolute; */
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.stream {
+  max-width: 560px;
+  /* you have to have a size or this method doesn't work */
+  max-height: 315px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: #006E6D;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loader-container {
+  margin: auto;
+  overflow: hidden;
+}
+.fa {
+  color: #efefef;
+}
+.fa.fa-500px {
+  color: #0099e5;
+}
+.fa.fa-adn {
+  color: #4a484c;
+}
+.fa.fa-amazon {
+  color: #ff9900;
+}
+.fa.fa-android {
+  color: #a4c639;
+}
+.fa.fa-angellist {
+  color: #000000;
+}
+.fa.fa-apple {
+  color: #979797;
+}
+.fa.fa-behance {
+  color: #1769ff;
+}
+.fa.fa-behance-square {
+  color: #1769ff;
+}
+.fa.fa-bitbucket {
+  color: #205081;
+}
+.fa.fa-bitbucket-square {
+  color: #205081;
+}
+.fa.fa-bitcoin {
+  color: #ee9209;
+}
+.fa.fa-black-tie {
+  color: #222222;
+}
+.fa.fa-btc {
+  color: #ee9209;
+}
+.fa.fa-buysellads {
+  color: #c90100;
+}
+.fa.fa-cc-amex {
+  color: #007bc1;
+}
+.fa.fa-cc-diners-club {
+  color: #004a97;
+}
+.fa.fa-cc-discover {
+  color: #f68121;
+}
+.fa.fa-cc-jcb {
+  color: #003a8f;
+}
+.fa.fa-cc-mastercard {
+  color: #0a3a82;
+}
+.fa.fa-cc-paypal {
+  color: #253b80;
+}
+.fa.fa-cc-stripe {
+  color: #00afe1;
+}
+.fa.fa-cc-visa {
+  color: #0157a2;
+}
+.fa.fa-chrome {
+  color: #4587f3;
+}
+.fa.fa-codepen {
+  color: #000000;
+}
+.fa.fa-connectdevelop {
+  color: #391448;
+}
+.fa.fa-contao {
+  color: #eb8623;
+}
+.fa.fa-creative-commons {
+  color: #231f20;
+}
+.fa.fa-css3 {
+  color: #1680c0;
+}
+.fa.fa-dashcube {
+  color: #7f7f7f;
+}
+.fa.fa-delicious {
+  color: #3399ff;
+}
+.fa.fa-deviantart {
+  color: #4e6252;
+}
+.fa.fa-digg {
+  color: #000000;
+}
+.fa.fa-dribbble {
+  color: #444444;
+}
+.fa.fa-dropbox {
+  color: #007ee5;
+}
+.fa.fa-drupal {
+  color: #0077c0;
+}
+.fa.fa-empire {
+  color: #000000;
+}
+.fa.fa-expeditedssl {
+  color: #343433;
+}
+.fa.fa-facebook {
+  color: #3b5998;
+}
+.fa.fa-facebook-official {
+  color: #3b5998;
+}
+.fa.fa-facebook-square {
+  color: #3b5998;
+}
+.fa.fa-firefox {
+  color: #e66000;
+}
+.fa.fa-flickr {
+  color: #ff0084;
+}
+.fa.fa-fonticons {
+  color: #1c1e29;
+}
+.fa.fa-forumbee {
+  color: #83ad13;
+}
+.fa.fa-foursquare {
+  color: #0072b1;
+}
+.fa.fa-ge {
+  color: #000000;
+}
+.fa.fa-get-pocket {
+  color: #d3505a;
+}
+.fa.fa-gg {
+  color: #000000;
+}
+.fa.fa-gg-circle {
+  color: #000000;
+}
+.fa.fa-git {
+  color: #333333;
+}
+.fa.fa-git-square {
+  color: #333333;
+}
+.fa.fa-github {
+  color: #333333;
+}
+.fa.fa-github-alt {
+  color: #333333;
+}
+.fa.fa-github-square {
+  color: #333333;
+}
+.fa.fa-gittip {
+  color: #663300;
+}
+.fa.fa-google {
+  color: #4285f4;
+}
+.fa.fa-google-plus {
+  color: #dd4b39;
+}
+.fa.fa-google-plus-square {
+  color: #dd4b39;
+}
+.fa.fa-google-wallet {
+  color: #4285f4;
+}
+.fa.fa-hacker-news {
+  color: #ff6600;
+}
+.fa.fa-houzz {
+  color: #7ac142;
+}
+.fa.fa-html5 {
+  color: #e34f26;
+}
+.fa.fa-instagram {
+  color: #3f729b;
+}
+.fa.fa-internet-explorer {
+  color: #1ebbee;
+}
+.fa.fa-ioxhost {
+  color: #faa729;
+}
+.fa.fa-joomla {
+  color: #142849;
+}
+.fa.fa-jsfiddle {
+  color: #4679bd;
+}
+.fa.fa-lastfm {
+  color: #c3000d;
+}
+.fa.fa-lastfm-square {
+  color: #c3000d;
+}
+.fa.fa-leanpub {
+  color: #0c0c0c;
+}
+.fa.fa-linkedin {
+  color: #0976b4;
+}
+.fa.fa-linkedin-square {
+  color: #0976b4;
+}
+.fa.fa-linux {
+  color: #333333;
+}
+.fa.fa-maxcdn {
+  color: #ff6600;
+}
+.fa.fa-meanpath {
+  color: #538ed7;
+}
+.fa.fa-medium {
+  color: #000000;
+}
+.fa.fa-odnoklassniki {
+  color: #ed812b;
+}
+.fa.fa-odnoklassniki-square {
+  color: #ed812b;
+}
+.fa.fa-opencart {
+  color: #2ac2ef;
+}
+.fa.fa-openid {
+  color: #f78c40;
+}
+.fa.fa-opera {
+  color: #cc0f16;
+}
+.fa.fa-optin-monster {
+  color: #83c11f;
+}
+.fa.fa-pagelines {
+  color: #000000;
+}
+.fa.fa-paypal {
+  color: #253b80;
+}
+.fa.fa-pied-piper {
+  color: #2f9f46;
+}
+.fa.fa-pied-piper-alt {
+  color: #2f9f46;
+}
+.fa.fa-pied-piper-square {
+  color: #2f9f46;
+}
+.fa.fa-pinterest {
+  color: #cc2127;
+}
+.fa.fa-pinterest-p {
+  color: #cc2127;
+}
+.fa.fa-pinterest-square {
+  color: #cc2127;
+}
+.fa.fa-qq {
+  color: #000000;
+}
+.fa.fa-ra {
+  color: #000000;
+}
+.fa.fa-rebel {
+  color: #000000;
+}
+.fa.fa-reddit {
+  color: #ff4500;
+}
+.fa.fa-reddit-square {
+  color: #ff4500;
+}
+.fa.fa-renren {
+  color: #005eac;
+}
+.fa.fa-safari {
+  color: #1b88ca;
+}
+.fa.fa-sellsy {
+  color: #1f78b9;
+}
+.fa.fa-share-alt {
+  color: #01bf01;
+}
+.fa.fa-share-alt-square {
+  color: #01bf01;
+}
+.fa.fa-shirtsinbulk {
+  color: #dd3a26;
+}
+.fa.fa-simplybuilt {
+  color: #000000;
+}
+.fa.fa-skyatlas {
+  color: #00adbb;
+}
+.fa.fa-skype {
+  color: #00aff0;
+}
+.fa.fa-slack {
+  color: #0f7965;
+}
+.fa.fa-slideshare {
+  color: #e98325;
+}
+.fa.fa-soundcloud {
+  color: #ff8800;
+}
+.fa.fa-spotify {
+  color: #7ab800;
+}
+.fa.fa-stack-exchange {
+  color: #000000;
+}
+.fa.fa-stack-overflow {
+  color: #fe7a15;
+}
+.fa.fa-steam {
+  color: #0b0b0b;
+}
+.fa.fa-steam-square {
+  color: #0b0b0b;
+}
+.fa.fa-stumbleupon {
+  color: #eb4924;
+}
+.fa.fa-stumbleupon-circle {
+  color: #eb4924;
+}
+.fa.fa-tencent-weibo {
+  color: #74af2c;
+}
+.fa.fa-trello {
+  color: #256a92;
+}
+.fa.fa-tripadvisor {
+  color: #589442;
+}
+.fa.fa-tumblr {
+  color: #35465c;
+}
+.fa.fa-tumblr-square {
+  color: #35465c;
+}
+.fa.fa-twitch {
+  color: #6441a5;
+}
+.fa.fa-twitter {
+  color: #55acee;
+}
+.fa.fa-twitter-square {
+  color: #55acee;
+}
+.fa.fa-viacoin {
+  color: #333333;
+}
+.fa.fa-vimeo {
+  color: #1ab7ea;
+}
+.fa.fa-vimeo-square {
+  color: #1ab7ea;
+}
+.fa.fa-vine {
+  color: #00b488;
+}
+.fa.fa-vk {
+  color: #45668e;
+}
+.fa.fa-wechat {
+  color: #93d034;
+}
+.fa.fa-weibo {
+  color: #e71d34;
+}
+.fa.fa-weixin {
+  color: #93d034;
+}
+.fa.fa-wikipedia-w {
+  color: #000000;
+}
+.fa.fa-windows {
+  color: #00bcf2;
+}
+.fa.fa-wordpress {
+  color: #21759b;
+}
+.fa.fa-xing {
+  color: #026466;
+}
+.fa.fa-xing-square {
+  color: #026466;
+}
+.fa.fa-y-combinator {
+  color: #f0652f;
+}
+.fa.fa-yc {
+  color: #f0652f;
+}
+.fa.fa-yahoo {
+  color: #400191;
+}
+.fa.fa-yelp {
+  color: #af0606;
+}
+.fa.fa-youtube {
+  color: #e52d27;
+}
+.fa.fa-youtube-play {
+  color: #e52d27;
+}
+.fa.fa-youtube-square {
+  color: #e52d27;
+}
+
+
+.center {
+text-align: center;
+}
+
+.pagination {
+display: inline-block;
+}
+
+.pagination a {
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+transition: background-color .3s;
+margin: 0 4px;
+}
+
+.pagination a.active {
+background-color: #343148 !important;
+color: white;
+border: 1px solid #343148 !important;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+/* */

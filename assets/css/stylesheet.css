@@ -1,0 +1,269 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif
+}
+
+.w3-light-grey {
+  background-color: #00A591 !important
+}
+
+#particles-js canvas {
+  /*  position: absolute; */
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+img {
+width: auto ;
+max-width: 100% ;
+height: auto ;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.stream {
+  max-width: 560px;
+  /* you have to have a size or this method doesn't work */
+  max-height: 315px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: #006E6D;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loader-container {
+margin:auto;
+overflow:hidden;
+}
+
+/*
+Hiding the rect on page load
+And add the "expand" animation
+*/
+rect {
+opacity:0;
+animation: expand 0.2s forwards;
+}
+/* End of housekeeping css */xs
+
+/* Delays to subsequent "dashes" */
+#line1 #dash-2 {
+animation-delay:0.1s;
+}
+
+#line1 #dash-3 {
+animation-delay:0.2s;
+}
+
+#line1 #dash-4 {
+animation-delay:0.3s;
+}
+
+#line2 #dash-1 {
+animation-delay:0.4s;
+}
+
+#line2 #dash-2 {
+animation-delay:0.5s;
+}
+
+#line2 #dash-3 {
+animation-delay:0.6s;
+}
+
+#line3 {
+animation-delay:0.7s;
+}
+
+#line4 {
+animation-delay:.8s;
+}
+
+#line5 {
+animation-delay:0.9s;
+}
+
+#line6 {
+animation-delay:1s;
+}
+
+@keyframes expand {
+0% { opacity: 1; width: 0}
+100% { opacity: 1; width: 1 }
+}
+
+#group1 {
+animation: scroll 1s linear infinite;
+animation-delay: 1s;
+}
+
+@keyframes scroll {
+0% {transform: translateY(initial)}
+100% {transform: translateY(-165px)}
+}
+
+#group2 {
+transform: translateY(165px);
+animation: scroll2 1s linear infinite;
+animation-delay: 1s
+}
+
+@keyframes scroll2 {
+0% {transform: translateY(165px)}
+100% {transform: translateY(0px)}
+}
+
+/*Start of the painful CSS...*/
+
+#group2 #line1 #dash-1 {
+animation: line1dash1 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line1dash1 {
+0% {width: 0}
+20% {width: 40px}
+100% {width: 40px} /* <-- 20% and 100% are the same, giving us that "delayed effect*/
+}
+
+#group2 #line1 #dash-2 {
+animation: line1dash2 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line1dash2 {
+0% {width: 0px;}
+10% { width: 0px;} /*<-- we start the second dash at 10% instead of the 0% above */
+30% { width: 60px;}
+100% { width: 60px;}
+}
+
+#group2 #line1 #dash-3 {
+animation: line1dash3 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line1dash3 {
+0% {width: 0px;}
+20% { width: 0px;}
+40% { width: 100px;}
+100% { width: 100px;}
+}
+
+
+#group2 #line1 #dash-4 {
+animation: line1dash4 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line1dash4 {
+0% {width: 0px;}
+35% { width: 0px;}
+50% { width: 70px;}
+100% { width: 70px;}
+}
+
+
+#group2 #line2 #dash-1 {
+animation: line2dash1 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line2dash1 {
+0% {width: 0px;}
+40% { width: 0px;}
+60% { width: 40px;}
+100% { width: 40px;}
+}
+
+#group2 #line2 #dash-2 {
+animation: line2dash2 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line2dash2 {
+0% {width: 0px;}
+50% { width: 0px;}
+70% { width: 60px;}
+100% { width: 60px;}
+}
+
+#group2 #line2 #dash-3 {
+animation: line2dash3 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line2dash3 {
+0% {width: 0px;}
+60% { width: 0px;}
+80% { width: 80px;}
+100% { width: 80px;}
+}
+
+#group2 #line3 {
+animation: line3 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line3 {
+0% {width: 0px;}
+65% { width: 0px;}
+85% { width: 290px;}
+100% { width: 290px;}
+}
+
+#group2 #line4 {
+animation: line4 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line4 {
+0% {width: 0px;}
+70% { width: 0px;}
+90% { width: 225px;}
+100% { width: 225px;}
+}
+
+#group2 #line5 {
+animation: line5 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line5 {
+0% {width: 0px;}
+80% { width: 0px;}
+95% { width: 40px;}
+100% { width: 40px;}
+}
+
+#group2 #line6 {
+animation: line6 1s linear infinite;
+opacity:1;
+}
+
+@keyframes line6 {
+0% {width: 0px;}
+85% { width: 0px;}
+100% { width: 40px;}
+}

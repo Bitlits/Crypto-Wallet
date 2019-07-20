@@ -1,0 +1,182 @@
+{{>head}}
+
+<body>
+  <div class="content">
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="https://bitlits.com/"><img src="/assets/img/logo.png" class="navbar-left" alt="Bitlits" width="45" height="45"
+				 style="padding-top:10px;padding-right:10px;"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="http://bitlits.com/contact"><strong>Lorem Ipsum</strong></a></li>
+				<li><a href="http://bitlits.com/contact"><strong>Lorem Ipsum</strong></a></li>
+				<li><a href="http://bitlits.com/contact"><strong>Lorem Ipsum</strong></a></li>
+				<li><a href="http://bitlits.com/contact"><strong>Lorem Ipsum</strong></a></li>
+        <li><a href="http://community.bitlits.com/"><strong>Lorem Ipsum</strong></a></li>
+        <li><a href="https://bitlits.com/contact" target="_blank"><strong>Lorem Ipsum</strong></a></li>
+
+        	<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Themes </strong><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-theme="flatly" class="theme-link">Flatly</a></li>
+                <li><a href="#" data-theme="cerulean" class="theme-link">Cerulean</a></li>
+                <li><a href="#" data-theme="cosmo" class="theme-link">Cosmo</a></li>
+				        <li><a href="#" data-theme="paper" class="theme-link">Paper</a></li>
+				        <li><a href="#" data-theme="sandstone" class="theme-link">Sandstone</a></li>
+				        <li><a href="#" data-theme="paper" class="theme-link">Paper</a></li>
+                <li><a href="#" data-theme="cyborg" class="theme-link">Cyborg</a></li>
+				        <li><a href="#" data-theme="superhero" class="theme-link">Superhero</a></li>
+				        <li><a href="#" data-theme="yeti" class="theme-link">Yeti</a></li>
+				        <li><a href="#" data-theme="lumens" class="theme-link">Lumens</a></li>
+                <li><a href="#" data-theme="darkly" class="theme-link">Darkly</a></li>
+                <li><a href="#" data-theme="journal" class="theme-link">Journal</a></li>
+                <li><a href="#" data-theme="readable" class="theme-link">Readable</a></li>
+                <li><a href="#" data-theme="simplex" class="theme-link">Simplex</a></li>
+                <li><a href="#" data-theme="slate" class="theme-link">Slate</a></li>
+                <li><a href="#" data-theme="spacelab" class="theme-link">Spacelab</a></li>
+                <li><a href="#" data-theme="united" class="theme-link">United</a></li>
+              </ul>
+            </li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Key" value="{{key}}">
+				</div>
+			</form>
+
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="/profile"><strong>Profile</strong></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+    <div class="container">
+<br>
+      <div class="row well">
+        <div class="col-lg-12 col-sm-12 col-12">
+          <h1>Your Account</h1>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12">
+          <p>Deposit {{altcoin}} into your wallet. Once they are confirmed, they will show up in your account. {{#genAddress}}If you wish to deposit {{altcoin}} to your account, generate a {{altcoin}} address
+              below.{{/genAddress}}
+            <p>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-12">
+          <p><strong>Access to your account is controlled by an access key. To get access to your account, bookmark the url below:</strong></p>
+          <a href="{{url}}/?key={{key}}"><p class="form-control" style="margin-bottom:15px;color: #00bc8c;font-size:.9vw;"><strong>{{url}}/?key={{key}}</strong></p></a>
+        </div>
+        {{#genAddress}}
+          <div class="col-lg-12 col-sm-12 col-12">
+            <p><a href="/profile/generate" class="btn btn-success btn-block">Generate Deposit Address</a></p>
+          </div>
+        {{/genAddress}}
+        {{^genAddress}}
+          {{#user}}
+
+            <div class="col-lg-12 col-sm-12 col-12">
+              <p class="form-control" style="margin-bottom:15px;font-size:.9vw;">Your Deposit Address: <strong>{{address}}</strong></p>
+              <p class="form-control" style="margin-bottom:15px;font-size:.9vw;">Your Account Balance: <strong>{{balance}} {{altc}}</strong></p>
+            </div>
+
+            <div class="col-lg-12 col-sm-12 col-12">
+              <form action="/profile/withdraw/" method="post">
+                <div class="form-group">
+                  <input type="input" class="form-control" name="address" placeholder="Withdraw Address">
+                </div>
+                <div class="form-group">
+                  <input type="input" class="form-control" name="amount" placeholder="Withdraw Amount">
+                </div>
+                <input type="submit" value="Withdraw" class="btn btn-success btn-block g-recaptcha">
+                <br>
+                <div class="form-check" style="display:block;text-align:center;">
+                  <input type="checkbox" required name="terms" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">&nbsp;Agree to Terms & Services</label>
+                </div>
+              </form>
+            </div>
+          {{/user}}
+          {{/genAddress}}
+      </div>
+    </div>
+
+    <!-- Disable right-click of mouse, F12 key, and save key combinations on page -->
+    <script>
+      window.onload = function() {
+        document.addEventListener("contextmenu", function(e) {
+          e.preventDefault();
+        }, false);
+        document.addEventListener("keydown", function(e) {
+          //document.onkeydown = function(e) {
+          // "I" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+            disabledEvent(e);
+          }
+          // "J" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            disabledEvent(e);
+          }
+          // "S" key + macOS
+          if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            disabledEvent(e);
+          }
+          // "U" key
+          if (e.ctrlKey && e.keyCode == 85) {
+            disabledEvent(e);
+          }
+          // "F12" key
+          if (event.keyCode == 123) {
+            disabledEvent(e);
+          }
+        }, false);
+
+        function disabledEvent(e) {
+          if (e.stopPropagation) {
+            e.stopPropagation();
+          } else if (window.event) {
+            window.event.cancelBubble = true;
+          }
+          e.preventDefault();
+          return false;
+        }
+      };
+    </script>
+
+
+<script>
+var themes = {
+    "cerulean" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/cerulean/bootstrap.min.css",
+    "cosmo" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/cosmo/bootstrap.min.css",
+    "cyborg" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/cyborg/bootstrap.min.css",
+    "flatly" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/flatly/bootstrap.min.css",
+  	"lumens" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/lumen/bootstrap.min.css",
+    "darkly" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/darkly/bootstrap.min.css",
+  	"paper" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/paper/bootstrap.min.css",
+  	"sandstone" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/sandstone/bootstrap.min.css",
+  	"superhero" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/superhero/bootstrap.min.css",
+  	"yeti" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/yeti/bootstrap.min.css",
+    "journal" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/journal/bootstrap.min.css",
+    "readable" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/readable/bootstrap.min.css",
+    "simplex" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/simplex/bootstrap.min.css",
+    "slate" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/slate/bootstrap.min.css",
+    "spacelab" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/spacelab/bootstrap.min.css",
+    "united" : "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/united/bootstrap.min.css"
+}
+$(function(){
+   var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+    themesheet.appendTo('head');
+    $('.theme-link').click(function(){
+       var themeurl = themes[$(this).attr('data-theme')];
+        themesheet.attr('href',themeurl);
+    });
+});
+
+</script>
+    {{>foot}}
