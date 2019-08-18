@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.postimg.cc/HLmRx2My/logo.png" width="140" align="center">
+<img src="https://i.imgur.com/Z2V6VKq.png" width="380" align="center">
   </p>
 <p align="center">
   <a href="https://bitlits.com">
