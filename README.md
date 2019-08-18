@@ -95,7 +95,7 @@
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/jfaler/Tor-Crypto-Wallet/compare/" target="_blank">`https://github.com/jfaler/Bitcoin-Casino/compare/`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/jfaler/Tor-Crypto-Wallet/compare/" target="_blank">`https://github.com/jfaler/Tor-Crypto-Wallet/compare/`</a>.
 
 ### Step 4
 
