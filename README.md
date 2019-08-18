@@ -32,7 +32,8 @@
 
 ### Features
 
-* 🧠 Supports TOR a free & anonymous open-source software for enabling anonymous communication.
+* 🧠 Supports [TOR](https://www.torproject.org/) a free & anonymous open-source software for enabling anonymous communication.
+* 🚫 No Javascript
 * ⚛️ Supports multiple digital currencies (eg. Bitcoin, Litecoin, Dogecoin etc.).
 * 📖 Powerful admin dashboard and management tools.
 * 💡 Usability and scalability.
